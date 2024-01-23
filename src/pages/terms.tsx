@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default function termsAndConditions() {
-  return <div>termsAndConditions</div>;
+  return <div>termsAndConditionsss</div>;
 }
