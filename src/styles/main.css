@@ -26,3 +26,7 @@ a:hover {
 .content ul {
   @apply my-6;
 }
+
+.container {
+  @apply bg-background h-full max-w-full flex flex-col gap-6 p-1 md:p-5 justify-center items-center text-sm md:text-base text-quaternary
+}

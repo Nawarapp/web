@@ -5,7 +5,7 @@ export default function politics () {
   
   return (
     <>
-      <div className="bg-background h-full max-w-full flex flex-col gap-6 p-1 md:p-5 justify-center items-center text-sm md:text-base text-quaternary">
+      <div className="container">
         <div className="flex flex-col gap-6 p-5 max-w-6xl">
           <span className="font-bold text-xl md:text-5xl mx-8 flex justify-center text-primary">POLÍTICA DE PRIVACIDAD</span>
           <span className="font-bold mx-3">Última actualización: 19 de enero de 2024</span>
