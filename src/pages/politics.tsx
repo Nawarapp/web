@@ -10,13 +10,13 @@ export default function politics () {
           <span className="font-bold text-xl md:text-5xl mx-8 flex justify-center text-primary">POLÍTICA DE PRIVACIDAD</span>
           <span className="font-bold mx-3">Última actualización: 19 de enero de 2024</span>
           <span className="mx-8 my-2">Esta notificación de privacidad para APPS TURISMO C.A 
-          ("<strong className="">nosotros</strong>", "<strong className="">nos</strong>", o "<strong className="">nuestro</strong>"),
+          ("<strong>nosotros</strong>", "<strong>nos</strong>", o "<strong>nuestro</strong>"),
             describe cómo y por qué podríamos recopilar, almacenar, usar y/o compartir
-          ("<strong className="">Procesar</strong>")  tu información cuando utilizas nuestros servicios ("<strong className="">Servicios</strong>"), 
+          ("<strong>Procesar</strong>")  tu información cuando utilizas nuestros servicios ("<strong>Servicios</strong>"), 
           como cuando: <br />
             • Descargas y utilizas nuestra aplicación móvil (Nawara), u cualquier otra aplicación nuestra que enlace a esta notificación de privacidad. <br />
             • Te relacionas con nosotros de otras maneras relacionadas, incluyendo ventas, marketing o eventos. <br />
-            <strong className=""> ¿Preguntas o inquietudes?</strong> Leer esta notificación de privacidad te ayudará a entender tus derechos y opciones de privacidad. 
+            <strong> ¿Preguntas o inquietudes?</strong> Leer esta notificación de privacidad te ayudará a entender tus derechos y opciones de privacidad. 
             Si no estás de acuerdo con nuestras políticas y prácticas, por favor, no uses nuestros Servicios. Si aún tienes preguntas o inquietudes, contáctanos en app.nawara.css@gmail.com.
           </span>
           <span className="font-bold mx-3">RESUMEN DE PUNTOS CLAVE</span>
@@ -48,16 +48,14 @@ export default function politics () {
               <li>Teléfono</li>
             </ol>
           </span>
-          <span className="mx-3"><strong className="">Información sensible.</strong> No procesamos información sensible.</span>
-          <span className="mx-8 my-2"><strong className="">Datos de inicio de sesión en redes sociales.</strong> Es posible que te ofrezcamos 
-          la opción de registrarte con nosotros utilizando los 
-            detalles de tu cuenta existente en redes sociales, 
+          <span className="mx-3"><strong>Información sensible.</strong> No procesamos información sensible.</span>
+          <span className="mx-8 my-2"><strong >Datos de inicio de sesión en redes sociales.</strong> Es posible que te ofrezcamos 
+            la opción de registrarte con nosotros utilizando los detalles de tu cuenta existente en redes sociales, 
             como tu cuenta de Facebook, Twitter, u otra cuenta de redes sociales. Si eliges registrarte de esta manera, recopilaremos 
-            la información descrita en la sección llamada 
-            "¿CÓMO MANEJAMOS TUS INICIOS DE SESIÓN EN REDES SOCIALES?" a continuación.
+            la información descrita en la sección llamada "¿CÓMO MANEJAMOS TUS INICIOS DE SESIÓN EN REDES SOCIALES?" a continuación.
           </span>
           <span className="mx-3">
-            <strong className="">Datos de la aplicación.</strong> Si utilizas nuestras aplicaciones, también podemos recopilar la siguiente información
+            <strong>Datos de la aplicación.</strong> Si utilizas nuestras aplicaciones, también podemos recopilar la siguiente información
             si decides proporcionarnos acceso o permiso:
           </span>
           <span className="mx-8 my-2">
@@ -98,18 +96,18 @@ export default function politics () {
             3. CUÁNDO Y CON QUIÉN COMPARTIMOS TU INFORMACIÓN PERSONAL:
           </span>
           <span className="mx-8 my-2">
-            <strong className="">En Resumen:</strong> Podemos compartir información en situaciones específicas descritas en esta sección y/o con terceros específicos. <br />
+            <strong>En Resumen:</strong> Podemos compartir información en situaciones específicas descritas en esta sección y/o con terceros específicos. <br />
             Es posible que necesitemos compartir tu información personal en las siguientes situaciones: <br />
-            <strong className="">Transferencias Empresariales:</strong> Podemos compartir o transferir tu información en relación con, o durante las negociaciones de, 
+            <strong>Transferencias Empresariales:</strong> Podemos compartir o transferir tu información en relación con, o durante las negociaciones de, 
             cualquier fusión, venta de activos de la empresa, financiamiento o adquisición de toda o parte de nuestra empresa por otra entidad. <br />
-            <strong className="">Uso de API de Google Maps Platform:</strong> Podemos compartir tu información con ciertas API de Google Maps Platform 
+            <strong>Uso de API de Google Maps Platform:</strong> Podemos compartir tu información con ciertas API de Google Maps Platform 
             (por ejemplo, Google Maps API, Places API).
           </span>
           <span id="pregunta4" className="font-bold mx-6 text-xl">
             4. ¿UTILIZAMOS COOKIES Y OTRAS TECNOLOGÍAS DE RASTREO?
           </span>
           <span className="mx-8 my-2">
-          <strong className="">En Resumen:</strong> Podemos usar cookies y otras tecnologías de seguimiento para recopilar y almacenar tu información.<br />
+          <strong>En Resumen:</strong> Podemos usar cookies y otras tecnologías de seguimiento para recopilar y almacenar tu información.<br />
           Podemos utilizar cookies y tecnologías similares de seguimiento (como balizas web y píxeles) para acceder o almacenar información. 
           Los detalles específicos sobre cómo utilizamos estas tecnologías y cómo puedes rechazar ciertas cookies se encuentran 
           en nuestro Aviso de Cookies.
@@ -118,7 +116,7 @@ export default function politics () {
             5. ¿CÓMO MANEJAMOS TUS INICIOS DE SESIÓN EN REDES SOCIALES?
           </span>
           <span className="mx-8 my-2">
-            <strong className="">En Resumen:</strong> Si eliges registrarte o iniciar sesión en nuestros servicios utilizando una cuenta de 
+            <strong>En Resumen:</strong> Si eliges registrarte o iniciar sesión en nuestros servicios utilizando una cuenta de 
             redes sociales, podemos tener acceso a cierta información sobre ti. <br /><br /> Nuestros servicios te ofrecen la 
             posibilidad de registrarte e iniciar sesión utilizando los detalles de tu cuenta de redes sociales de terceros 
             (como tus credenciales de Facebook o Twitter). En caso de que elijas hacerlo, recibiremos cierta información de 
@@ -135,7 +133,7 @@ export default function politics () {
             6. ¿CUÁNTO TIEMPO GUARDAMOS TU INFORMACIÓN?
           </span>
           <span className="mx-8 my-2">
-            <strong className="">En Resumen:</strong> Mantenemos tu información durante el tiempo necesario para cumplir con los fines establecidos 
+            <strong>En Resumen:</strong> Mantenemos tu información durante el tiempo necesario para cumplir con los fines establecidos 
             en este aviso de privacidad, a menos que la ley exija lo contrario. <br /><br /> Solo conservaremos tu información personal 
             durante el tiempo que sea necesario para los fines establecidos en este aviso de privacidad, a menos que la ley requiera 
             o permita un período de retención más largo (como requisitos fiscales, contables u otros requisitos legales). 
@@ -149,7 +147,7 @@ export default function politics () {
             7. ¿CÓMO MANTENEMOS SEGURA TU INFORMACIÓN?
           </span>
           <span className="mx-8 my-2">
-            <strong className="">En Resumen:</strong> Buscamos proteger tu información personal mediante un sistema de medidas de 
+            <strong>En Resumen:</strong> Buscamos proteger tu información personal mediante un sistema de medidas de 
             seguridad organizativas y técnicas. <br /> Hemos implementado medidas de seguridad técnicas y organizativas apropiadas y 
             razonables diseñadas para proteger la seguridad de cualquier información personal que procesemos. Sin embargo, a 
             pesar de nuestras salvaguardias y esfuerzos para asegurar tu información, ninguna transmisión electrónica a través de 
@@ -163,7 +161,7 @@ export default function politics () {
             8. ¿RECOLECTAMOS INFORMACIÓN DE MENORES?
           </span>
           <span className="mx-8 my-2">
-            <strong className="">En Resumen:</strong> No recopilamos intencionalmente datos de o realizamos marketing dirigido a menores de 18 años. <br /><br />
+            <strong>En Resumen:</strong> No recopilamos intencionalmente datos de o realizamos marketing dirigido a menores de 18 años. <br /><br />
             No solicitamos intencionalmente datos de o realizamos marketing dirigido a menores de 18 años. Al utilizar 
             los servicios, declaras que tienes al menos 18 años o que eres el padre o tutor de un menor y consientes en 
             el uso de los servicios por parte del menor dependiente. Si llegamos a saber que se ha recopilado información personal de usuarios menores de 
@@ -174,7 +172,7 @@ export default function politics () {
             9. ¿CUÁLES SON TUS DERECHOS DE PRIVACIDAD?
           </span>
           <span className="mx-8 my-2">
-            <strong className="">En Resumen:</strong> Puedes revisar, cambiar o dar de baja tu cuenta en cualquier momento. <br /><br />
+            <strong>En Resumen:</strong> Puedes revisar, cambiar o dar de baja tu cuenta en cualquier momento. <br /><br />
             Retirada de tu consentimiento: Si estamos basando el procesamiento de tu información personal en tu consentimiento, 
             ya sea expreso o implícito según la ley aplicable, tienes el derecho de retirar tu consentimiento en cualquier momento. 
             Puedes retirar tu consentimiento en cualquier momento comunicándote con nosotros utilizando los detalles de contacto 
@@ -189,7 +187,7 @@ export default function politics () {
             a continuación. Luego, serás eliminado de las listas de marketing. Sin embargo, aún podemos comunicarnos contigo, 
             por ejemplo, para enviarte mensajes relacionados con el servicio que sean necesarios para la administración y 
             uso de tu cuenta, para responder a solicitudes de servicio o con otros fines no relacionados con marketing. <br /><br />
-            <strong className="">Información de la cuenta:</strong> <br /><br />
+            <strong>Información de la cuenta:</strong> <br /><br />
             Si en algún momento deseas revisar o cambiar la información en tu cuenta o dar de baja tu cuenta, puedes: <br /><br />
             Iniciar sesión en la configuración de tu cuenta y actualizar tu cuenta de usuario.
             Comunicarte con nosotros mediante la información de contacto proporcionada.
@@ -215,7 +213,7 @@ export default function politics () {
             11. ¿REALIZAMOS ACTUALIZACIONES A ESTA NOTIFICACIÓN?
           </span>
           <span className="mx-8 my-2">
-            <strong className="">En Resumen:</strong> Sí, actualizaremos esta notificación según sea necesario para cumplir con las leyes 
+            <strong>En Resumen:</strong> Sí, actualizaremos esta notificación según sea necesario para cumplir con las leyes 
             relevantes. <br /><br /> Podemos actualizar este aviso de privacidad de vez en cuando. La versión actualizada 
             se indicará con una fecha de "Revisión" actualizada y será efectiva tan pronto como esté accesible. 
             Si realizamos cambios sustanciales en este aviso de privacidad, es posible que te notifiquemos colocando un aviso de tales 
