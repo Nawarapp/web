@@ -20,6 +20,7 @@ module.exports = {
         primary: '#179A9E',
         secondary: '#0F7477',
         tertiary: '#DD295F',
+        quaternary: '#1a2e35',
         border: '#1a2e35',
         background: '#ffffff',
       },
