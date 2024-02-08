@@ -7,7 +7,9 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
   <>
     <Head>
       <link rel="icon" href="/assets/images/logo-nawara-pico.png" />
-      <title>Nawara</title>
+      <title>Nawara App
+        
+      </title>
     </Head>
     <Component {...pageProps} />
   </>
