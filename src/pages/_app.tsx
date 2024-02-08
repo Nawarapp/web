@@ -1,7 +1,7 @@
-import { AppProps } from 'next/app';
+import { AppProps } from "next/app";
 
-import '../styles/main.css';
-import Head from 'next/head';
+import "../styles/main.css";
+import Head from "next/head";
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <>

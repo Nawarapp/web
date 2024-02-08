@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import About from '../components/About';
+import About from "../components/About";
 
 export default function terms() {
   return (

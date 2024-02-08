@@ -1,18 +1,18 @@
-import React, { useMemo } from 'react';
+import React, { useMemo } from "react";
 
-import config from '../config/index.json';
-import Divider from './Divider';
+import config from "../config/index.json";
+import Divider from "./Divider";
 
-const Product = ({ template }: { template: 'product' | 'howWorks' }) => {
+const Product = ({ template }: { template: "product" | "howWorks" }) => {
   const { product, howWorks } = config;
 
   const data = useMemo(
-    () => (template === 'product' ? product : howWorks),
+    () => (template === "product" ? product : howWorks),
     [howWorks, product, template]
   );
 
   const items = useMemo(
-    () => (template === 'product' ? product.items : howWorks.items),
+    () => (template === "product" ? product.items : howWorks.items),
     [howWorks.items, product.items, template]
   );
 
@@ -22,12 +22,12 @@ const Product = ({ template }: { template: 'product' | 'howWorks' }) => {
         <h1
           className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
         >
-          {data.title.split(' ').map((word, index) => (
+          {data.title.split(" ").map((word, index) => (
             <span
               key={index}
-              className={index % 2 ? 'text-primary' : 'text-border'}
+              className={index % 2 ? "text-primary" : "text-border"}
             >
-              {word}{' '}
+              {word}{" "}
             </span>
           ))}
         </h1>
@@ -37,14 +37,14 @@ const Product = ({ template }: { template: 'product' | 'howWorks' }) => {
           <div
             className={
               index % 2
-                ? 'flex flex-wrap'
-                : 'flex flex-wrap flex-col-reverse sm:flex-row'
+                ? "flex flex-wrap"
+                : "flex flex-wrap flex-col-reverse sm:flex-row"
             }
             key={item.title}
           >
             {index % 2 ? (
               <>
-                <div className={'w-5/6 sm:w-1/2 p-6 mt-20'}>
+                <div className={"w-5/6 sm:w-1/2 p-6 mt-20"}>
                   <h3
                     className={`text-3xl text-gray-800 font-bold leading-none mb-3`}
                   >
@@ -61,7 +61,7 @@ const Product = ({ template }: { template: 'product' | 'howWorks' }) => {
                 <div className={`w-full sm:w-1/2 p-6`}>
                   <img className="h-6/6" src={item?.img} alt={item?.title} />
                 </div>
-                <div className={'w-5/6 sm:w-1/2 p-6 mt-20'}>
+                <div className={"w-5/6 sm:w-1/2 p-6 mt-20"}>
                   <h3
                     className={`text-3xl text-gray-800 font-bold leading-none mb-3`}
                   >
