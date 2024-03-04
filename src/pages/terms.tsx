@@ -1,21 +1,25 @@
-/* eslint-disable react/no-unescaped-entities */
-import About from '../components/About';
+import { useEffect } from "react";
+import About from "../components/About";
 
-export default function terms() {
+export default function Terms() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className="container">
         <div className="flex flex-col gap-6 p-5 max-w-6xl">
-          <span className="font-bold text-xl md:text-3xl mx-8 flex justify-center text-primary">
+          <span className="font-bold text-xl md:text-3xl mx-8 flex justify-center text-tertiary">
             Términos y Condiciones de Uso de Nawara
           </span>
           Fecha de entrada en vigor: 24 de Enero de 2024 Bienvenido a Nawara,
           nos dedicamos a transformar la manera en que exploras y disfrutas de
           Venezuela. Al acceder o utilizar nuestra aplicación móvil y sitio web,
           aceptas cumplir con los siguientes Términos y Condiciones de Uso
-          ("Términos"), que constituyen un contrato legal entre tú (en adelante,
-          "Usuario" o "tú") y Nawara (en adelante, "nosotros", "nuestro" o "la
-          compañía"). El acceso a los servicios de Nawara es libre y gratuito.
+          ('Términos'), que constituyen un contrato legal entre tú (en adelante,
+          'Usuario' o 'tú') y Nawara (en adelante, 'nosotros', 'nuestro' o 'la
+          compañía'). El acceso a los servicios de Nawara es libre y gratuito.
           El Usuario garantiza y declara ser mayor de 18 años, y/o en su caso,
           que tiene la expresa autorización de sus padres o de sus tutores para
           poder acceder al sitio web y que es competente para entender y aceptar
@@ -139,7 +143,7 @@ export default function terms() {
           aplicación móvil y sitio web, confirmas que has leído, comprendido y
           aceptado estos Términos y Condiciones de Uso. ¡Disfruta de Nawara y de
           nuestra comunidad de apasionados viajeros!
-          <hr className="mt-8 border-t-1 border-quaternary" />
+          <hr className="mt-8 border-t-1 border-tertiary" />
         </div>
         <About />
       </div>
