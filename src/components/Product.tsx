@@ -1,161 +1,96 @@
-import React, { useMemo } from 'react';
+import "animate.css";
 
-import config from '../config/index.json';
-import Divider from './Divider';
+import { useEffect, useMemo, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
-const Product = ({ template }: { template: 'product' | 'howWorks' }) => {
+import config from "../config/index.json";
+
+interface ProductItemProps {
+  title: string;
+  description: string;
+  imgSrc: string;
+  animationDirection?: "left" | "right";
+}
+
+const ProductItem: React.FC<ProductItemProps> = ({
+  title,
+  description,
+  imgSrc,
+  animationDirection = "left",
+}) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.2,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setIsVisible(true);
+    }
+  }, [inView]);
+
+  const animationClass = isVisible
+    ? `animate__animated animate__fadeIn${
+        animationDirection === "right" ? "Right" : "Left"
+      }`
+    : "opacity-0";
+
+  return (
+    <div
+      ref={ref}
+      className={`flex justify-center items-center ${animationClass}`}
+    >
+      <div
+        className={`flex flex-col items-center max-w-xs sm:flex-row sm:max-w-xl md:max-w-2xl lg:max-w-4xl ${
+          animationDirection === "right" ? "sm:flex-row-reverse" : ""
+        }`}
+      >
+        <div className="mt-10">
+          <h3 className="text-secondary font-bold text-xl lg:text-3xl mb-2 text-center">
+            {title}
+          </h3>
+          <p className="text-secondary text-sm lg:text-lg max-w-xl">
+            {description}
+          </p>
+        </div>
+        <img className="w-60 lg:w-1/3 mt-10" src={imgSrc} alt="image" />
+      </div>
+    </div>
+  );
+};
+
+const Product = ({ template }: { template: "product" | "howWorks" }) => {
   const { product, howWorks } = config;
 
   const data = useMemo(
-    () => (template === 'product' ? product : howWorks),
+    () => (template === "product" ? product : howWorks),
     [howWorks, product, template]
   );
 
-  const items = useMemo(
-    () => (template === 'product' ? product.items : howWorks.items),
-    [howWorks.items, product.items, template]
-  );
+  const { title, items, subtitle } = data;
 
   return (
-    <section className={`bg-background py-8`} id={template}>
-      <div className={`container max-w-5xl mx-auto m-8`}>
-        <h1
-          className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
-        >
-          {data.title.split(' ').map((word, index) => (
-            <span
-              key={index}
-              className={index % 2 ? 'text-primary' : 'text-border'}
-            >
-              {word}{' '}
-            </span>
-          ))}
-        </h1>
-        <Divider />
-
-        {items.map((item, index) => (
-          <div
-            className={
-              index % 2
-                ? 'flex flex-wrap'
-                : 'flex flex-wrap flex-col-reverse sm:flex-row'
-            }
-            key={item.title}
-          >
-            {index % 2 ? (
-              <>
-                <div className={'w-5/6 sm:w-1/2 p-6 mt-20'}>
-                  <h3
-                    className={`text-3xl text-gray-800 font-bold leading-none mb-3`}
-                  >
-                    {item?.title}
-                  </h3>
-                  <p className={`text-gray-600`}>{item?.description}</p>
-                </div>
-                <div className={`w-full sm:w-1/2 p-6`}>
-                  <img className="h-6/6" src={item?.img} alt={item?.title} />
-                </div>
-              </>
-            ) : (
-              <>
-                <div className={`w-full sm:w-1/2 p-6`}>
-                  <img className="h-6/6" src={item?.img} alt={item?.title} />
-                </div>
-                <div className={'w-5/6 sm:w-1/2 p-6 mt-20'}>
-                  <h3
-                    className={`text-3xl text-gray-800 font-bold leading-none mb-3`}
-                  >
-                    {item?.title}
-                  </h3>
-                  <p className={`text-gray-600`}>{item?.description}</p>
-                </div>
-              </>
-            )}
-          </div>
-        ))}
+    <div id={template} className="mt-10">
+      <div className="flex items-center justify-center gap-2">
+        <h2 className="text-4xl lg:text-5xl flex justify-center text-secondary font-bold">
+          {title}
+        </h2>
+        <h2 className="text-4xl lg:text-5xl flex justify-center text-tertiary font-bold">
+          {subtitle}
+        </h2>
       </div>
-    </section>
+      {items.map((item, index) => (
+        <ProductItem
+          key={index}
+          title={item.title}
+          description={item.description}
+          imgSrc={item.img}
+          animationDirection={index % 2 === 0 ? "left" : "right"}
+        />
+      ))}
+    </div>
   );
 };
 
 export default Product;
-
-// const Product = ({ template }: { template: 'product' | 'howWorks' }) => {
-//   const { product, howWorks } = config;
-//   const [productFirst, productSecond] = product.items;
-//   const [howWorkFirst, howWorkSecond] = howWorks.items;
-
-//   const data = useMemo(
-//     () => (template === 'product' ? product : howWorks),
-//     [howWorks, product, template]
-//   );
-
-//   const firstItem = useMemo(
-//     () => (template === 'product' ? productFirst : howWorkFirst),
-//     [howWorkFirst, productFirst, template]
-//   );
-//   const secondItem = useMemo(
-//     () => (template === 'product' ? productSecond : howWorkSecond),
-//     [howWorkSecond, productSecond, template]
-//   );
-
-//   return (
-//     <section className={`bg-background py-8`} id="product">
-//       <div className={`container max-w-5xl mx-auto m-8`}>
-//         <h1
-//           className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
-//         >
-//           {data.title.split(' ').map((word, index) => (
-//             <span
-//               key={index}
-//               className={index % 2 ? 'text-primary' : 'text-border'}
-//             >
-//               {word}{' '}
-//             </span>
-//           ))}
-//         </h1>
-//         <Divider />
-
-//         <div className={`flex flex-wrap`}>
-//           <div className={`w-5/6 sm:w-1/2 p-6 mt-20`}>
-//             <h3
-//               className={`text-3xl text-gray-800 font-bold leading-none mb-3`}
-//             >
-//               {firstItem?.title}
-//             </h3>
-//             <p className={`text-gray-600`}>{firstItem?.description}</p>
-//           </div>
-//           <div className={`w-full sm:w-1/2 p-6`}>
-//             <img
-//               className="h-6/6"
-//               src={firstItem?.img}
-//               alt={firstItem?.title}
-//             />
-//           </div>
-//         </div>
-
-//         <div className={`flex flex-wrap flex-col-reverse sm:flex-row`}>
-//           <div className={`w-full sm:w-1/2 p-6`}>
-//             <img
-//               className="h-6/6"
-//               src={secondItem?.img}
-//               alt={secondItem?.title}
-//             />
-//           </div>
-//           <div className={`w-full sm:w-1/2 p-6 mt-20`}>
-//             <div className={`align-middle`}>
-//               <h3
-//                 className={`text-3xl text-gray-800 font-bold leading-none mb-3`}
-//               >
-//                 {secondItem?.title}
-//               </h3>
-//               <p className={`text-gray-600 mb-8`}>{secondItem?.description}</p>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Product;

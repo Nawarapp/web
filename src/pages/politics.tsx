@@ -1,25 +1,30 @@
-/* eslint-disable react/no-unescaped-entities */
-import About from '../components/About';
-import { ListaOrdenada, datosLista } from '../components/ItemList';
+import { useEffect } from "react";
+import About from "../components/About";
+import OrderList from "../components/OrderList";
+import { data } from "../utils";
 
-export default function politics() {
+export default function Politics() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className="container">
         <div className="flex flex-col gap-6 p-5 max-w-6xl">
-          <span className="font-bold text-xl md:text-5xl mx-8 flex justify-center text-primary">
+          <span className="font-bold text-xl md:text-5xl mx-8 flex justify-center text-tertiary">
             POLÍTICA DE PRIVACIDAD
           </span>
           <span className="font-bold mx-3">
             Última actualización: 19 de enero de 2024
           </span>
           <span className="mx-8 my-2">
-            Esta notificación de privacidad para APPS TURISMO C.A ("
-            <strong>nosotros</strong>", "<strong>nos</strong>", o "
-            <strong>nuestro</strong>"), describe cómo y por qué podríamos
-            recopilar, almacenar, usar y/o compartir ("<strong>Procesar</strong>
-            ") tu información cuando utilizas nuestros servicios ("
-            <strong>Servicios</strong>"), como cuando: <br />
+            Esta notificación de privacidad para APPS TURISMO C.A ('
+            <strong>nosotros</strong>', '<strong>nos</strong>', o '
+            <strong>nuestro</strong>'), describe cómo y por qué podríamos
+            recopilar, almacenar, usar y/o compartir ('<strong>Procesar</strong>
+            ') tu información cuando utilizas nuestros servicios ('
+            <strong>Servicios</strong>'), como cuando: <br />
             • Descargas y utilizas nuestra aplicación móvil (Nawara), u
             cualquier otra aplicación nuestra que enlace a esta notificación de
             privacidad. <br />
@@ -40,7 +45,7 @@ export default function politics() {
             encontrar la sección que buscas.
           </span>
 
-          <ListaOrdenada datos={datosLista} />
+          <OrderList datos={data} />
 
           <span id="pregunta1" className="font-bold mx-6 text-xl">
             1. ¿QUÉ INFORMACIÓN RECOPILAMOS?
@@ -82,8 +87,8 @@ export default function politics() {
             utilizando los detalles de tu cuenta existente en redes sociales,
             como tu cuenta de Facebook, Twitter, u otra cuenta de redes
             sociales. Si eliges registrarte de esta manera, recopilaremos la
-            información descrita en la sección llamada "¿CÓMO MANEJAMOS TUS
-            INICIOS DE SESIÓN EN REDES SOCIALES?" a continuación.
+            información descrita en la sección llamada '¿CÓMO MANEJAMOS TUS
+            INICIOS DE SESIÓN EN REDES SOCIALES?' a continuación.
           </span>
           <span className="mx-3">
             <strong>Datos de la aplicación.</strong> Si utilizas nuestras
@@ -119,7 +124,7 @@ export default function politics() {
             En resumen: Procesamos tu información para proporcionar, mejorar y
             administrar nuestros Servicios, comunicarnos contigo, para seguridad
             y prevención de fraudes y para cumplir con la ley. También podemos
-            procesar tu información para otros fines con tu consentimiento.{' '}
+            procesar tu información para otros fines con tu consentimiento.{" "}
             <br />
             Procesamos tu información personal por diversas razones, según cómo
             interactúes con nuestros Servicios, incluyendo: <br />
@@ -140,7 +145,7 @@ export default function politics() {
             envías con fines de marketing, si esto está de acuerdo con tus
             preferencias de marketing. Puedes darte de baja de nuestros correos
             electrónicos de marketing en cualquier momento. Para obtener más
-            información, consulta "¿CUÁLES SON TUS DERECHOS DE PRIVACIDAD?" a
+            información, consulta '¿CUÁLES SON TUS DERECHOS DE PRIVACIDAD?' a
             continuación. <br />• Entregar publicidad dirigida. Podemos procesar
             tu información para desarrollar y mostrar contenido y publicidad
             personal
@@ -218,7 +223,7 @@ export default function politics() {
             retención más largo (como requisitos fiscales, contables u otros
             requisitos legales). Ningún propósito en este aviso justificará
             conservar tu información personal durante más tiempo del necesario
-            para el período en que los usuarios tengan una cuenta con nosotros.{' '}
+            para el período en que los usuarios tengan una cuenta con nosotros.{" "}
             <br />
             <br /> Cuando no tengamos una necesidad comercial legítima continua
             para procesar tu información personal, la eliminaremos o
@@ -279,7 +284,7 @@ export default function politics() {
             consentimiento en cualquier momento. Puedes retirar tu
             consentimiento en cualquier momento comunicándote con nosotros
             utilizando los detalles de contacto proporcionados en la sección
-            "¿CÓMO PUEDES CONTACTARNOS SOBRE ESTA NOTIFICACIÓN?" a continuación.{' '}
+            '¿CÓMO PUEDES CONTACTARNOS SOBRE ESTA NOTIFICACIÓN?' a continuación.{" "}
             <br />
             <br />
             No obstante, ten en cuenta que esto no afectará la legalidad del
@@ -291,9 +296,9 @@ export default function politics() {
             Puedes darte de baja de nuestras comunicaciones de marketing y
             promocionales en cualquier momento haciendo clic en el enlace de
             cancelación de suscripción en los correos electrónicos que enviamos,
-            respondiendo "STOP" o "UNSUBSCRIBE" a los mensajes SMS que enviamos,
+            respondiendo 'STOP' o 'UNSUBSCRIBE' a los mensajes SMS que enviamos,
             o comunicándote con nosotros mediante los detalles proporcionados en
-            la sección "¿CÓMO PUEDES CONTACTARNOS SOBRE ESTA NOTIFICACIÓN?" a
+            la sección '¿CÓMO PUEDES CONTACTARNOS SOBRE ESTA NOTIFICACIÓN?' a
             continuación. Luego, serás eliminado de las listas de marketing. Sin
             embargo, aún podemos comunicarnos contigo, por ejemplo, para
             enviarte mensajes relacionados con el servicio que sean necesarios
@@ -325,7 +330,7 @@ export default function politics() {
           <span className="mx-8 my-2">
             La mayoría de los navegadores web y algunos sistemas operativos
             móviles y aplicaciones móviles incluyen una función o configuración
-            de No Seguir ("DNT") que puedes activar para indicar tu preferencia
+            de No Seguir ('DNT') que puedes activar para indicar tu preferencia
             de privacidad de no tener datos sobre tus actividades de navegación
             en línea monitoreados y recopilados. Hasta ahora, no se ha
             finalizado un estándar tecnológico uniforme para reconocer e
@@ -343,7 +348,7 @@ export default function politics() {
             <strong>En Resumen:</strong> Sí, actualizaremos esta notificación
             según sea necesario para cumplir con las leyes relevantes. <br />
             <br /> Podemos actualizar este aviso de privacidad de vez en cuando.
-            La versión actualizada se indicará con una fecha de "Revisión"
+            La versión actualizada se indicará con una fecha de 'Revisión'
             actualizada y será efectiva tan pronto como esté accesible. Si
             realizamos cambios sustanciales en este aviso de privacidad, es
             posible que te notifiquemos colocando un aviso de tales cambios de
@@ -376,7 +381,7 @@ export default function politics() {
             solicitud de acceso de datos. Esta política de privacidad fue creada
             utilizando el Generador de Política de Privacidad de Termly.
           </span>
-          <hr className="mt-8 border-t-1 border-quaternary" />
+          <hr className="mt-8 border-t-1 border-tertiary" />
         </div>
         <About />
       </div>

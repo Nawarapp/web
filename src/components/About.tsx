@@ -1,6 +1,5 @@
-import React from 'react';
-
-import config from '../config/index.json';
+import { Link } from "react-router-dom";
+import config from "../config/index.json";
 
 const About = () => {
   const { company, about } = config;
@@ -8,26 +7,23 @@ const About = () => {
   const { socialMedia, sections } = about;
 
   return (
-    <div
-      id="about"
-      className="mx-auto container xl:px-20 lg:px-12 sm:px-6 px-4 py-12"
-    >
+    <div id="about" className="">
       <div className="flex flex-col items-center justify-center">
         <div>
-          <img src={logo} alt={companyName} className="w-16 h-16" />
+          <img src={logo} alt={companyName} className="w-16 h-16 mb-4 mt-7" />
         </div>
-        <div className="flex flex-wrap sm:gap-10 gap-8 items-center justify-center mt-4 h-12">
+        <div className="flex items-center mb-4">
           {sections.map((section, index) => (
-            <a
+            <Link
               key={`${section.name}-${index}`}
-              href={section.href}
-              className="hover:text-primary text-base cursor-pointer leading-4 text-gray-800 dark:text-gray-400 dark:hover:text-white"
+              to={section.href}
+              className="hover:text-gray-700 text-base cursor-pointer mr-8 leading-4 text-gray-800 dark:text-gray-600 dark:hover:text-gray-900"
             >
               {section.name}
-            </a>
+            </Link>
           ))}
         </div>
-        <div className="flex items-center gap-x-8 mt-6 h-8">
+        <div className="flex items-center gap-x-8 my-6">
           <a
             aria-label="instagram"
             href={socialMedia.instagram}
@@ -35,7 +31,7 @@ const About = () => {
             rel="noreferrer"
           >
             <svg
-              className="fill-current text-gray-800 dark:text-white hover:text-primary"
+              className="fill-current text-gray-800 dark:text-gray-900 hover:text-gray-700"
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
@@ -51,7 +47,7 @@ const About = () => {
             rel="noreferrer"
           >
             <svg
-              className="fill-current text-gray-800 dark:text-white hover:text-primary"
+              className="fill-current text-gray-800 dark:text-gray-900 hover:text-gray-700"
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
@@ -67,7 +63,7 @@ const About = () => {
             rel="noreferrer"
           >
             <svg
-              className="fill-current text-gray-800 dark:text-white hover:text-primary"
+              className="fill-current text-gray-800 dark:text-gray-900 hover:text-gray-700"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -77,8 +73,8 @@ const About = () => {
             </svg>
           </a>
         </div>
-        <div className="flex items-center mt-6">
-          <p className="mt-6 text-xs lg:text-sm leading-none text-gray-900 dark:text-gray-50">
+        <div className="flex items-center my-5">
+          <p className=" text-xs lg:text-sm leading-none text-gray-900 dark:text-gray-600">
             &copy; {new Date().getFullYear()} Nawara App
           </p>
         </div>
