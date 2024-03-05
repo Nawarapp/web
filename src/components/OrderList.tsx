@@ -15,10 +15,12 @@ interface ListaOrdenadaProps {
   datos: { id: string; texto: string }[];
 }
 
-export const ListaOrdenada: React.FC<ListaOrdenadaProps> = ({ datos }) => (
+const OrderList: React.FC<ListaOrdenadaProps> = ({ datos }) => (
   <ol className="font-bold mx-3 mb-10 flex flex-col list-decimal">
     {datos.map((item) => (
       <ItemList key={item.id} id={item.id} texto={item.texto} />
     ))}
   </ol>
 );
+
+export default OrderList;
