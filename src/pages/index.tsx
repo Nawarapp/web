@@ -6,9 +6,9 @@ import {
   Navbar,
   Product,
   Whatsapp,
-} from "../components";
+} from '../components';
 
-function Index() {
+const Index = () => {
   return (
     <div className="max-w-screen">
       <Navbar />
@@ -24,6 +24,6 @@ function Index() {
       <Whatsapp />
     </div>
   );
-}
+};
 
 export default Index;
