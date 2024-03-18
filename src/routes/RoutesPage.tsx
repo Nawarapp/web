@@ -1,7 +1,7 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
-import { Politics } from '../pages/politics';
-import { Terms } from '../pages/terms';
-import Index from '../pages';
+import { Navigate, Route, Routes } from "react-router-dom";
+import { Politics } from "../pages/Politics";
+import { Terms } from "../pages/Terms";
+import Index from "../pages/Index";
 
 const RoutesPage = () => {
   return (
@@ -11,9 +11,10 @@ const RoutesPage = () => {
         <Route path="/politics" element={<Politics />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/*" element={<Navigate to="/" />} />
+        <h2>hola</h2>
       </Routes>
     </>
   );
 };
 
-export default RoutesPage;
+export { RoutesPage };

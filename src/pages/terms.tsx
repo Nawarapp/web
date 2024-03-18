@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import About from '../components/About';
+import { useEffect } from "react";
+import { About } from "../components/About";
 
 const Terms = () => {
   useEffect(() => {

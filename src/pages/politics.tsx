@@ -1,7 +1,6 @@
-import { useEffect } from 'react';
-import About from '../components/About';
-import OrderList from '../components/OrderList';
-import { data } from '../utils';
+import { useEffect } from "react";
+import { About, OrderList } from "../components";
+import { data } from "../utils";
 
 const Politics = () => {
   useEffect(() => {
@@ -124,7 +123,7 @@ const Politics = () => {
             En resumen: Procesamos tu información para proporcionar, mejorar y
             administrar nuestros Servicios, comunicarnos contigo, para seguridad
             y prevención de fraudes y para cumplir con la ley. También podemos
-            procesar tu información para otros fines con tu consentimiento.{' '}
+            procesar tu información para otros fines con tu consentimiento.{" "}
             <br />
             Procesamos tu información personal por diversas razones, según cómo
             interactúes con nuestros Servicios, incluyendo: <br />
@@ -223,7 +222,7 @@ const Politics = () => {
             retención más largo (como requisitos fiscales, contables u otros
             requisitos legales). Ningún propósito en este aviso justificará
             conservar tu información personal durante más tiempo del necesario
-            para el período en que los usuarios tengan una cuenta con nosotros.{' '}
+            para el período en que los usuarios tengan una cuenta con nosotros.{" "}
             <br />
             <br /> Cuando no tengamos una necesidad comercial legítima continua
             para procesar tu información personal, la eliminaremos o
@@ -284,7 +283,7 @@ const Politics = () => {
             consentimiento en cualquier momento. Puedes retirar tu
             consentimiento en cualquier momento comunicándote con nosotros
             utilizando los detalles de contacto proporcionados en la sección
-            '¿CÓMO PUEDES CONTACTARNOS SOBRE ESTA NOTIFICACIÓN?' a continuación.{' '}
+            '¿CÓMO PUEDES CONTACTARNOS SOBRE ESTA NOTIFICACIÓN?' a continuación.{" "}
             <br />
             <br />
             No obstante, ten en cuenta que esto no afectará la legalidad del
