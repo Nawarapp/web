@@ -11,7 +11,6 @@ const RoutesPage = () => {
         <Route path="/politics" element={<Politics />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/*" element={<Navigate to="/" />} />
-        <h2>hola</h2>
       </Routes>
     </>
   );
