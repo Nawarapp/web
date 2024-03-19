@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { Politics } from '../pages/politics';
 import { Terms } from '../pages/terms';
-import Index from '../pages';
+import Index from '../pages/index';
 
 const RoutesPage = () => {
   return (
@@ -16,4 +16,4 @@ const RoutesPage = () => {
   );
 };
 
-export default RoutesPage;
+export { RoutesPage };
