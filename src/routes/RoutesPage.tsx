@@ -1,7 +1,7 @@
-import { Navigate, Route, Routes } from "react-router-dom";
-import { Politics } from "../pages/Politics";
-import { Terms } from "../pages/Terms";
-import Index from "../pages/Index";
+import { Navigate, Route, Routes } from 'react-router-dom';
+import { Politics } from '../pages/politics';
+import { Terms } from '../pages/terms';
+import Index from '../pages/index';
 
 const RoutesPage = () => {
   return (
