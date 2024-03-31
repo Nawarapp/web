@@ -6,7 +6,7 @@ import {
   Navbar,
   Product,
   Whatsapp,
-} from '../components';
+} from "../components";
 
 const Index = () => {
   return (
@@ -26,4 +26,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export { Index };
