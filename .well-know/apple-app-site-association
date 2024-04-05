@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "JRD2UHPVA2.com.company.nawara"
+        ],
+        "components": [
+          {
+            "/": "/package/*"
+          }
+        ]
+      }
+    ]
+  }
+}

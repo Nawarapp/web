@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.company.nawara",
+      "sha256_cert_fingerprints": [
+        "54:F1:6A:F9:97:58:D9:21:DF:2B:5A:BF:AF:B5:42:9F:18:8A:55:C3:BD:9D:AB:CB:30:FF:15:7E:3C:15:AF:40"
+      ]
+    }
+  }
+]
