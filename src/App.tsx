@@ -1,11 +1,7 @@
-import { RoutesPage } from "./routes/RoutesPage";
+import { RootNavigator } from './routes/RoutesPage';
 
 const App = () => {
-  return (
-    <>
-      <RoutesPage />
-    </>
-  );
+  return <RootNavigator />;
 };
 
 export { App };

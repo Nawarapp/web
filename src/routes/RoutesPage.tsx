@@ -1,19 +1,44 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Politics } from '../pages/politics';
-import { Terms } from '../pages/terms';
-import Index from '../pages/index';
 
-const RoutesPage = () => {
-  return (
-    <>
-      <Routes>
-        <Route path="/" element={<Index />} />
-        <Route path="/politics" element={<Politics />} />
-        <Route path="/terms" element={<Terms />} />
-        <Route path="/*" element={<Navigate to="/" />} />
-      </Routes>
-    </>
-  );
+import Index from '../pages/index';
+import { EULATerms } from '../pages/eula-terms';
+import { RequestDeleteUser } from '../pages/request-delete';
+import { HostAgreement } from '../pages/host-agreement';
+
+const RootNavigator = () => {
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Index />,
+    },
+    {
+      path: 'politics',
+      element: <Politics />,
+    },
+    {
+      path: 'terms',
+      element: <EULATerms />,
+    },
+    {
+      path: 'request-delete',
+      element: <RequestDeleteUser />,
+    },
+    {
+      path: 'host-agreement',
+      element: <HostAgreement />,
+    },
+    {
+      path: 'eula-terms',
+      element: <EULATerms />,
+    },
+    {
+      path: '*',
+      element: <Index />,
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
 };
 
-export { RoutesPage };
+export { RootNavigator };

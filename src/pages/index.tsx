@@ -1,6 +1,6 @@
 import {
   About,
-  Canvas,
+  // Canvas,
   Features,
   Landing,
   Navbar,
@@ -13,13 +13,13 @@ const Index = () => {
     <div className="max-w-screen">
       <Navbar />
       <Landing />
-      <Canvas />
+      {/* <Canvas /> */}
       <Product template="product" />
-      <Canvas />
+      {/* <Canvas /> */}
       <Features />
-      <Canvas />
+      {/* <Canvas /> */}
       <Product template="howWorks" />
-      <Canvas />
+      {/* <Canvas /> */}
       <About />
       <Whatsapp />
     </div>

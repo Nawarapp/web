@@ -12,12 +12,12 @@ const ItemList: React.FC<ItemListaProps> = ({ id, texto }) => (
 );
 
 interface ListaOrdenadaProps {
-  datos: { id: string; texto: string }[];
+  data: { id: string; texto: string }[];
 }
 
-const OrderList: React.FC<ListaOrdenadaProps> = ({ datos }) => (
+const OrderList: React.FC<ListaOrdenadaProps> = ({ data }) => (
   <ol className="font-bold mx-3 mb-10 flex flex-col list-decimal">
-    {datos.map((item) => (
+    {data.map((item) => (
       <ItemList key={item.id} id={item.id} texto={item.texto} />
     ))}
   </ol>
