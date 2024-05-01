@@ -13,23 +13,23 @@ const RootNavigator = () => {
       element: <Index />,
     },
     {
-      path: 'politics',
+      path: '/politics',
       element: <Politics />,
     },
     {
-      path: 'terms',
+      path: '/terms',
       element: <EULATerms />,
     },
     {
-      path: 'request-delete',
+      path: '/request-delete',
       element: <RequestDeleteUser />,
     },
     {
-      path: 'host-agreement',
+      path: '/host-agreement',
       element: <HostAgreement />,
     },
     {
-      path: 'eula-terms',
+      path: '/eula-terms',
       element: <EULATerms />,
     },
     {
