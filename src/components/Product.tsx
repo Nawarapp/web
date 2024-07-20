@@ -48,7 +48,7 @@ const ProductItem: React.FC<ProductItemProps> = ({
           <h3 className="text-secondary font-bold text-xl lg:text-3xl mb-2 text-center">
             {title}
           </h3>
-          <p className="text-secondary text-sm lg:text-lg max-w-xl">
+          <p className="text-secondary text-sm text-center lg:text-lg max-w-xl">
             {description}
           </p>
         </div>

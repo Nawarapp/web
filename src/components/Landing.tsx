@@ -6,6 +6,7 @@ import config from "../config/index.json";
 interface ButtonWithIconProps {
   icon: JSX.Element;
   text: string;
+  link: string;
 }
 
 const imgMobile = () => {
@@ -31,16 +32,22 @@ const videoWeb = () => {
   );
 };
 
-const ButtonWithIcon: React.FC<ButtonWithIconProps> = ({ icon, text }) => {
+const ButtonWithIcon: React.FC<ButtonWithIconProps> = ({
+  icon,
+  text,
+  link,
+}) => {
   return (
-    <button
+    <a
+      href={link}
+      target="_blank"
       className="
         border border-solid p-2 m-2 border-gray-50 rounded-xl flex items-center justify-around w-44
         "
     >
       {icon}
       <p className="text-xl">{text}</p>
-    </button>
+    </a>
   );
 };
 
@@ -69,10 +76,12 @@ const Landing = () => {
           </p>
           <div className="flex flex-col lg:flex-row">
             <ButtonWithIcon
+              link="https://apps.apple.com/ar/app/nawara/id6475821537"
               icon={<FaApple size={isShortScreen ? "30" : "40"} />}
               text="App Store"
             />
             <ButtonWithIcon
+              link="https://play.google.com/store/apps/details?id=com.company.nawara"
               icon={<BiLogoPlayStore size={isShortScreen ? "30" : "40"} />}
               text="Google Play"
             />
