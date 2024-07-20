@@ -61,7 +61,7 @@ function Navbar(): JSX.Element {
                 duration={1000}
                 key={item.name}
                 to={item.href}
-                className="font-bold text-sm mr-10 cursor-pointer"
+                className="font-bold text-md mr-10 cursor-pointer"
                 offset={-94}
               >
                 {item.name}
